@@ -32,6 +32,10 @@ header {
   color: #fff;
 }
 
+.search::placeholder {
+  color: #7378c5;
+}
+
 .search:focus {
   outline: none;
   background-color: var(--primary-color);
@@ -48,6 +52,7 @@ main {
   margin: 1rem;
   background-color: var(--secondary-color);
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
   overflow: hidden;
   border-radius: 3px;
 }
@@ -96,9 +101,16 @@ main {
   right: 0;
   max-height: 100%;
   transform: translateY(101%);
+  overflow-y: auto;
   transition: transform 0.3s ease-in;
 }
 
 .movie:hover .overview {
   transform: translateY(0);
+}
+
+.footer {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
